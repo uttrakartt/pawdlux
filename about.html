@@ -3,91 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Pawdlux</title>
+    <title>Pawdlux - Premium Pet Store | Rahul Petwal | India's Best</title>
+    <meta name="description" content="Pawdlux Premium Pet Store by Rahul Petwal. Premium pet products, fast delivery across India. WhatsApp: +91 9758927549">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <i class="fas fa-paw"></i> Pawdlux
+                    <i class="fas fa-paw"></i> <strong>Pawdlux</strong>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>About Pawdlux</h1>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="trust-badge">⭐ PREMIUM QUALITY | Trusted by 5000+ Customers</div>
+            <h1>🐾 Pawdlux Premium Pet Store 🐾</h1>
+            <h2 style="color: #EC4899; font-size: 1.3rem;">By Rahul Petwal</h2>
+            <p style="font-size: 1.1rem; margin: 1rem 0;">📱 +91 9758927549 | +91 84486 78205</p>
+            <p>Premium Quality Pet Products | Fast Delivery Across India</p>
+            <a href="products.html" class="btn btn-primary">Shop Premium Products</a>
         </div>
     </section>
 
-    <div class="container">
-        <section class="about-section">
-            <h2>Our Story</h2>
-            <p>Pawdlux was founded with a simple mission: to provide premium pet products that bring joy and wellness to your beloved companions. We believe that pets are family, and they deserve the very best.</p>
-            <p>Our carefully curated collection ensures quality, safety, and value for every pet parent.</p>
-        </section>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>✨ Why Choose Pawdlux?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>🏆 Premium Quality</h3>
+                    <p>100% authentic tested products from trusted brands</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>⚡ Fast Shipping</h3>
+                    <p>Delivery across India in 2-3 business days</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>💬 24/7 Support</h3>
+                    <p>WhatsApp, Call, Email support. Direct from Rahul Petwal</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>🔒 Secure Payment</h3>
+                    <p>PayPal certified. 100% safe transactions</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="values-section">
-            <h2>Our Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Quality</h3>
-                    <p>Premium products only</p>
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>⭐ PREMIUM Products Collection ⭐</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-weight: 600;">All products tested & verified for quality</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="premium-badge">PREMIUM</div>
+                    <div class="product-image"><i class="fas fa-dog"></i></div>
+                    <h3>🐕 Premium Dog Food</h3>
+                    <p style="color: #10B981; font-weight: 600;">✓ Vet Approved | ✓ All-Natural</p>
+                    <p class="price">₹1,999</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(128 reviews)</span>
+                    </div>
+                    <button class="btn btn-small" onclick="addToCart('Premium Dog Food', 1999)">Add to Cart</button>
                 </div>
-                <div class="value-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Sustainability</h3>
-                    <p>Eco-friendly practices</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Community</h3>
-                    <p>Pet lovers united</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Trust</h3>
-                    <p>Your satisfaction guaranteed</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="stats-section">
-            <div class="stat-card">
-                <h3>50,000+</h3>
-                <p>Happy Customers</p>
-            </div>
-            <div class="stat-card">
-                <h3>10,000+</h3>
-                <p>Products</p>
-            </div>
-            <div class="stat-card">
-                <h3>4.8/5</h3>
-                <p>Rating</p>
-            </div>
-            <div class="stat-card">
-                <h3>24/7</h3>
-                <p>Support</p>
-            </div>
-        </section>
-    </div>
+                <div class="product-card">
+                    <div class="premium-badge">PREMIUM</div>
+                    <div class="product-image"><i class="fas fa-cat"></i></div>
+                    <h3>🐱 Premium Cat Litter Box</h3>
+                    <p style="color: #10B981; font-weight: 600;">✓ Eco-Friendly | ✓ Odor Control</p>
+                    <p class="price">₹1,499</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(95 reviews)</span>
+                    </div>
+                    <button class="btn btn-small" onclick="addToCart('Cat Litter Box', 1499)">Add to Cart</button>
+                </div>
 
+                <div class="product-card">
+                    <div class="premium-badge">PREMIUM</div>
+                    <div class="product-image"><i class="fas fa-bone"></i></div>
+                    <h3>🎾 Premium Dog Toy Set</h3>
+                    <p style="color: #10B981; font-weight: 600;">✓ Non-Toxic | ✓ Durable</p>
+                    <p class="price">₹999</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(87 reviews)</span>
+                    </div>
+                    <button class="btn btn-small" onclick="addToCart('Dog Toy Set', 999)">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="premium-badge">PREMIUM</div>
+                    <div class="product-image"><i class="fas fa-fish"></i></div>
+                    <h3>🐠 Premium Fish Tank Setup</h3>
+                    <p style="color: #10B981; font-weight: 600;">✓ Complete Kit | ✓ Filter Included</p>
+                    <p class="price">₹3,499</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(72 reviews)</span>
+                    </div>
+                    <button class="btn btn-small" onclick="addToCart('Fish Tank Setup', 3499)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="products.html" class="btn btn-primary">View All Premium Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Guarantee -->
+    <section class="quality-guarantee">
+        <div class="container">
+            <h2>💯 PREMIUM Quality Guarantee</h2>
+            <div class="guarantee-grid">
+                <div class="guarantee-card">
+                    <h3>30-Day Money Back</h3>
+                    <p>Not satisfied? Full refund, no questions asked.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h3>100% Authentic</h3>
+                    <p>Every product verified and tested for quality.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h3>Direct Support</h3>
+                    <p>Personal support from Rahul Petwal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>📬 Subscribe for Premium Updates</h2>
+            <p>Get exclusive deals and pet care tips</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Pawdlux. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🐾 Pawdlux Premium</h3>
+                    <p>Premium pet store by Rahul Petwal</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/919758927549" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+919758927549" title="Call"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:uttrakartt@gmail.com" title="Email"><i class="fab fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>👤 Owner</h4>
+                    <p><strong>Rahul Petwal</strong></p>
+                    <p>📱 +91 9758927549</p>
+                    <p>📱 +91 84486 78205</p>
+                    <p>📧 uttrakartt@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📍 Address</h4>
+                    <p>Vishnupuram Lane No.1</p>
+                    <p>Mothrowala, Dehradun</p>
+                    <p>Uttarakhand 248001</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pawdlux Premium by Rahul Petwal ✨</p>
+            </div>
         </div>
     </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <a href="https://wa.me/919758927549?text=Hello%20Pawdlux!%20I%20want%20to%20know%20more%20about%20your%20premium%20products" class="contact-btn whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+919758927549" class="contact-btn phone-btn" title="Call Rahul">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <a href="mailto:uttrakartt@gmail.com?subject=Pawdlux%20Inquiry" class="contact-btn email-btn" title="Email Us">
+        <i class="fas fa-envelope"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
